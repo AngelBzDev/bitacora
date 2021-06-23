@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bitacora</title>
+   <link rel="stylesheet" href="./css/all.css">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <div class="container">
+      <div class="forms-container">
+         <div class="signin-signup">
+
+            <!-- Formulario de inicio de sesion -->
+            <form method="POST" class="sign-in-form">
+               <h2 class="title">Iniciar sesión</h2>
+               <div class="input-field">
+                  <div class="icon">
+                     <i class="fas fa-envelope" style="font-size: 1.1rem; color: #acacac"></i>
+                  </div>
+                  <input type="text" name="email" id="email" placeholder="Email" class="input">
+               </div>
+               <div class="input-field">
+                  <div class="icon">
+                     <i class="fas fa-lock" style="font-size: 1.1rem; color: #acacac"></i>
+                  </div>
+                  <input type="password" name="password" id="password" placeholder="Contraseña" class="input">
+               </div>
+               <input class="btn" type="submit" value="Acceder">
+            </form>
+
+            <!-- Formulario de registro -->
+            <form method="POST" class="sign-up-form">
+               <h2 class="title">Registrarse</h2>
+               <div class="input-field">
+                  <div class="icon">
+                     <i class="fas fa-user" style="font-size: 1.1rem; color: #acacac"></i>
+                  </div>
+                  <input type="text" name="username2" id="username2" placeholder="Usuario" class="input">
+               </div>
+               <div class="input-field">
+                  <div class="icon">
+                     <i class="fas fa-envelope" style="font-size: 1.1rem; color: #acacac"></i>
+                  </div>
+                  <input type="email" name="email2" id="email2" placeholder="Email" class="input">
+               </div>
+               <div class="input-field">
+                  <div class="icon">
+                     <i class="fas fa-lock" style="font-size: 1.1rem; color: #acacac"></i>
+                  </div>
+                  <input type="password" name="password2" id="password2" placeholder="Contraseña" class="input">
+               </div>
+               <input class="btn" type="submit" value="Regístrarse">
+            </form>
+         </div>
+      </div>
+      <div class="panels-container">
+         <div class="panel left-panel">
+            <div class="content">
+               <h3>Nuevo aqui?</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempora sapiente, recusandae officiis expedita dolor minima.</p>
+               <button class="btn transparent" id="sign-up-btn">Registrate</button>
+            </div>
+            <img src="img/utn_256.png" class="image logo">
+         </div>
+
+         <div class="panel right-panel">
+            <div class="content">
+               <h3>Eres uno de nosotros?</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempora sapiente, recusandae officiis expedita dolor minima.</p>
+               <button class="btn transparent" id="sign-in-btn">Inicia sesión</button>
+            </div>
+            <img src="img/edomex_vertical.png" class="image">
+         </div>
+      </div>
+   </div>
+   <script src="./js/all.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="./js/app.js" type="module"></script>
+</body>
+</html>
