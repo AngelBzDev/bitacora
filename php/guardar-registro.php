@@ -15,6 +15,14 @@
          exit;
       }
 
+      if(isset($_POST['id'])){
+         $id = $_POST['id'];
+         $query = "UPDATE solicitudes SET atendio='$atendio', fecha='$fecha', correo='$correo', docente='$docente', asunto='$asunto' WHERE id = '$id'";
+         $update = mysqli_query($conn, $query);
+         return 'Registro actualizado';
+         exit;
+      }
+
       $query = "INSERT INTO solicitudes (atendio, fecha, correo, docente, asunto) VALUES ('$atendio', '$fecha', '$correo', '$docente', '$asunto')";
 
       $insert = mysqli_query($conn, $query);

@@ -2,7 +2,6 @@
    require './config/database.php';
 
    function iniciarSesion(){
-
       $conn = conectarDB();
 
       $email = strtolower($_POST['email']);
@@ -28,6 +27,7 @@
             $_SESSION['usuario'] = $usuario['email'];
             $_SESSION['login'] = true;
             $_SESSION['rol'] = $usuario['rol'];
+            $_SESSION['username'] = $usuario['username'];
 
             return 'Sesion iniciada';
          }
